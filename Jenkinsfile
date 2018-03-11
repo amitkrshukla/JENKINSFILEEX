@@ -3,20 +3,18 @@ pipeline{
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    '''
+                echo " Init"
             }
         }
         stage ('Build') {
             steps {
                 
-                    echo " Hello World"
+                    echo " Build"
             }
         }
-        stage ('Test') {
+        stage ('Deploy') {
             steps {
-                echo " Testing"
+                echo " Deploy"
             }
         }
     }
